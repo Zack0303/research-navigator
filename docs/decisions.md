@@ -36,3 +36,7 @@ D012 — Owner explicitly approved public MIT experimental publication under Zac
 Current release checkpoint: C0/C1 complete; C2 experimental agent checks complete within disclosed scope, human validation deferred; C3 approved; C4 repository exists, upload/release/CI verification in progress.
 
 C4 upload verification: 34 files match fetched remote blobs; implementation commit 74119be5645bbac79a65a34f99288a7c7dd8b372. GitHub CI succeeded on Python 3.10/3.12 (run 38894848854). Version release follows verification; authoritative release state is on GitHub.
+
+D013 — Web-chat access is the first and most prominent EN/ES/ZH README entry. WEB-START.txt is self-contained, supports paste/upload and copyable scholar output without scripts. No technical background assumed. Platform-specific web compatibility remains unverified; never confuse agent simulation with Gemini/DeepSeek UI testing. Owner requested update to published repository.
+
+Web-chat checkpoint: independent agent used WEB-START.txt alone for two Chinese history-student turns. Observed no unsupported verification, identity attribution or file creation claims. EN/ES/ZH web entry visibility checked. This is not provider UI compatibility or human validation. Three existing generator tests still pass.

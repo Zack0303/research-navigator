@@ -1,3 +1,6 @@
+# v0.1.1-alpha — Web chat access
+Adds WEB-START.txt, a single self-contained instruction file for pasting/uploading in ordinary web chats. EN/ES/ZH README pages now put this route first, with humanities examples and no coding prerequisite. Browsing and downloadable files are optional capabilities; supplied sources remain unverified without inspection. Exact Gemini/DeepSeek interfaces have not been tested. The automated generator is unchanged. See web-chat-trial.md for agent-only checks.
+
 # v0.1.0-alpha — 2026-10-16
 First experimental release, approved for public MIT distribution.
 

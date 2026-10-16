@@ -2,10 +2,23 @@
 Convierte una idea amplia en una propuesta viable de máster o doctorado, o revisa un borrador con requisitos universitarios respaldados por fuentes.
 
 [English](README.md) · [中文](README.zh-CN.md)
+
+
+## 🌐 Empieza en un chat de IA web — recomendado para principiantes
+**No necesitas formación técnica, instalar Codex ni programar.**
+
+1. Abre **[las instrucciones completas para chat web](WEB-START.txt)** y copia todo el texto en un chat nuevo de Gemini, DeepSeek u otra IA. Si admite adjuntos de texto, también puedes subir el archivo. No envíes solo el enlace.
+2. Explica tu necesidad en tu idioma. Por ejemplo: **«Estudio un máster en Historia y quiero investigar periódicos locales. Ayúdame a delimitar una pregunta viable. Explícame en español; entregaré en inglés».**
+
+La IA debería hacer pocas preguntas útiles y ayudarte a empezar. No necesitas un borrador completo ni un enlace universitario para iniciar. Sin navegación, las normas quedan sin verificar; sin creación de archivos, los métodos académicos se entregan como texto copiable. Las funciones y formatos admitidos varían; no hemos probado individualmente estas interfaces web.
+
+**[Abrir instrucciones](WEB-START.txt) · [Abrir texto sin formato para copiar](https://raw.githubusercontent.com/Zack0303/research-navigator/main/WEB-START.txt)**
+
+Si ya utilizas un agente que lee archivos locales, consulta la ruta de carpeta que sigue.
+
+## Otra opción: carpeta local en Codex y agentes similares
+
 [Guía paso a paso en Codex](docs/start-in-codex.md)
-
-
-## Empieza aquí: sin programar para planificar o revisar
 Necesitas un agente de IA que lea archivos locales. Verificar fuentes actuales requiere navegación web; generar archivos requiere permiso de escritura; el generador opcional sin conexión necesita Python (véase la guía avanzada). Este repositorio contiene instrucciones para el agente, no una aplicación de chat independiente. Tu proveedor puede cobrar su uso habitual.
 
 1. Descarga y descomprime el repositorio, o usa la copia local.
@@ -40,4 +53,4 @@ Los idiomas de orientación y entrega son independientes. Se puede solicitar cua
 
 [Generador y pruebas](docs/development.md) · [PRD](docs/PRD-v0.1.md) · [Evaluación](docs/evaluation.md)
 
-Versión experimental v0.1.0-alpha. Los ejemplos indican sus límites históricos y documentales. No garantizan admisión ni cumplimiento. Las simulaciones no demuestran facilidad de uso humana, demanda ni ingresos. Licencia MIT.
+Versión experimental v0.1.1-alpha. Los ejemplos indican sus límites históricos y documentales. No garantizan admisión ni cumplimiento. Las simulaciones no demuestran facilidad de uso humana, demanda ni ingresos. Licencia MIT.

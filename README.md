@@ -2,10 +2,23 @@
 Turn a broad research idea into a manageable master's or PhD proposal, or review a draft against evidence-backed programme requirements.
 
 [中文](README.zh-CN.md) · [Español](README.es.md)
+
+
+## 🌐 Start with a web AI chat — recommended for first-time users
+**No coding background needed. No Codex installation required.**
+
+1. Open **[the all-in-one web chat instructions](WEB-START.txt)**. Copy the whole text into a new Gemini, DeepSeek or other AI chat. If your chat supports text attachments, you can upload the file instead. Do not send only its link.
+2. Tell it what you need. For example: **“I am a history master's student with a broad idea about local newspapers. Help me find a manageable research question. Explain in English.”**
+
+The AI should ask a few useful questions and help you start. No school link or completed draft is needed to begin. If it cannot browse, school requirements stay unverified. If it cannot create files, scholar guidance is delivered as copyable text. Upload formats and capabilities vary by platform; these web interfaces have not been individually tested here.
+
+**[Open the instructions](WEB-START.txt) · [Open plain text to copy](https://raw.githubusercontent.com/Zack0303/research-navigator/main/WEB-START.txt)**
+
+Already using a file-capable agent? Continue with the local-folder route below.
+
+## Local-folder option — Codex and similar agents
+
 [Step-by-step Codex start](docs/start-in-codex.md)
-
-
-## Start here — no coding required for planning or review
 You need an AI agent that can read local Markdown files. Live university and scholar checks also need web browsing. File generation needs an agent that can write files; the optional helper needs Python. This repository is a set of agent instructions, not a standalone chat app. Your agent provider's usual usage charges may apply.
 
 1. Download and unzip this repository, or use your local copy.
@@ -45,4 +58,4 @@ Examples disclose historical/limited evidence. They are not guarantees of admiss
 ## For contributors and advanced users
 [Offline generator and tests](docs/development.md) · [PRD](docs/PRD-v0.1.md) · [Evidence rules](references/source-verification.md) · [Evaluation plan](docs/evaluation.md) · [Decisions](docs/decisions.md) · [Release readiness](docs/release-readiness.md)
 
-Experimental v0.1.0-alpha. No proven user demand or income. MIT licensed. Agent walkthroughs do not establish human usability or superiority to generic AI.
+Experimental v0.1.1-alpha. No proven user demand or income. MIT licensed. Agent walkthroughs do not establish human usability or superiority to generic AI.
