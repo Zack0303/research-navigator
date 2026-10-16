@@ -1,0 +1,28 @@
+{
+  "name": "Demo Scholar",
+  "slug": "scholar-demo",
+  "institution": "Fictional Institute",
+  "field": "Synthetic methods",
+  "identity_confirmed": true,
+  "synthetic": true,
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Synthetic demonstration only",
+      "url": "https://example.org/synthetic-paper",
+      "checked": "2026-10-16",
+      "locator": "Methods paragraph 1",
+      "evidence": "The fictional study compares two methods on a held-out set.",
+      "inspected": true
+    }
+  ],
+  "approaches": [
+    {
+      "claim": "This fictional study uses held-out evaluation.",
+      "source_ids": [
+        "S1"
+      ],
+      "application": "Consider a held-out evaluation if suitable; this is interpretation."
+    }
+  ]
+}

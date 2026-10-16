@@ -1,0 +1,53 @@
+{
+  "name": "Yoshua Bengio",
+  "slug": "scholar-bengio-selected-methods",
+  "institution": "Université de Montréal",
+  "field": "Machine learning; selected historical methods only",
+  "identity_confirmed": true,
+  "synthetic": false,
+  "sources": [
+    {
+      "id": "I1",
+      "title": "Yoshua Bengio official profile",
+      "url": "https://yoshuabengio.org/en",
+      "checked": "2026-10-16",
+      "locator": "Opening biography",
+      "evidence": "Identifies Bengio as a computer science professor at Université de Montréal. Identity evidence only.",
+      "inspected": true
+    },
+    {
+      "id": "P1",
+      "title": "Bergstra and Bengio (2012), Random Search for Hyper-Parameter Optimization",
+      "url": "https://www.jmlr.org/papers/v13/bergstra12a.html",
+      "checked": "2026-10-16",
+      "locator": "Abstract; author list",
+      "evidence": "Coauthored study compares random and grid search, including matched computational budgets. Abstract inspected; full experimental protocol not reviewed.",
+      "inspected": true
+    },
+    {
+      "id": "P2",
+      "title": "Glorot and Bengio (2010), Understanding the difficulty of training deep feedforward neural networks",
+      "url": "https://proceedings.mlr.press/v9/glorot10a.html",
+      "checked": "2026-10-16",
+      "locator": "Abstract; author list",
+      "evidence": "Coauthored study examines activation and gradient behavior to motivate initialization changes. Abstract inspected; full experimental protocol not reviewed.",
+      "inspected": true
+    }
+  ],
+  "approaches": [
+    {
+      "claim": "The selected 2012 coauthored paper compares tuning strategies under computational constraints. This is not a general claim about Bengio’s preferences.",
+      "source_ids": [
+        "P1"
+      ],
+      "application": "Interpretation: for a forecasting proposal, consider a simple tuning baseline and explicit compute budget; do not assume the paper establishes performance on your dataset."
+    },
+    {
+      "claim": "The selected 2010 coauthored paper uses training diagnostics to investigate optimization difficulties.",
+      "source_ids": [
+        "P2"
+      ],
+      "application": "Interpretation: if neural-network training is unstable, plan diagnostic measurements before proposing a new method; applicability to non-neural models is limited."
+    }
+  ]
+}
