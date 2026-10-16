@@ -34,3 +34,5 @@ C2 update: two fresh-context agent executions compared on one identical syntheti
 D012 — Owner explicitly approved public MIT experimental publication under Zack0303/research-navigator. Authorization persists; no repeat approval needed. Dedicated validator now passes for main Skill and real example using temporary PyYAML dependency. Three generator tests pass on Python 3.12.14. Publication in progress.
 
 Current release checkpoint: C0/C1 complete; C2 experimental agent checks complete within disclosed scope, human validation deferred; C3 approved; C4 repository exists, upload/release/CI verification in progress.
+
+C4 upload verification: 34 files match fetched remote blobs; implementation commit 74119be5645bbac79a65a34f99288a7c7dd8b372. GitHub CI succeeded on Python 3.10/3.12 (run 38894848854). Version release follows verification; authoritative release state is on GitHub.
