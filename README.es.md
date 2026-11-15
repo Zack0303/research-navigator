@@ -1,56 +1,51 @@
 # Research Navigator
-Convierte una idea amplia en una propuesta viable de máster o doctorado, o revisa un borrador con requisitos universitarios respaldados por fuentes.
+
+**Un prompt de “director de tesis” para estudiantes de máster y doctorado.** Pégalo en cualquier chat de IA. Te ayuda a planificar un proyecto, revisar un borrador, preparar una revisión de literatura o planificar una sección, y revisa los errores que suelen costar meses.
 
 [English](README.md) · [中文](README.zh-CN.md)
 
+## Empieza en un minuto (sin programar)
 
-## 🌐 Empieza en un chat de IA web — recomendado para principiantes
-**No necesitas formación técnica, instalar Codex ni programar.**
+1. Abre **[WEB-START.txt](WEB-START.txt)** ([texto sin formato para copiar](https://raw.githubusercontent.com/Zack0303/research-navigator/main/WEB-START.txt)).
+2. Cópialo entero en un chat nuevo de ChatGPT, Claude, Gemini, DeepSeek u otro. Si admite archivos, súbelo. Un enlace no basta.
+3. Explica lo que necesitas en tu idioma. Por ejemplo:
 
-1. Abre **[las instrucciones completas para chat web](WEB-START.txt)** y copia todo el texto en un chat nuevo de Gemini, DeepSeek u otra IA. Si admite adjuntos de texto, también puedes subir el archivo. No envíes solo el enlace.
-2. Explica tu necesidad en tu idioma. Por ejemplo: **«Estudio un máster en Historia y quiero investigar periódicos locales. Ayúdame a delimitar una pregunta viable. Explícame en español; entregaré en inglés».**
+> Estudio un máster en Educación. Quiero investigar cómo usan los docentes las herramientas de corrección con IA, pero el tema es demasiado amplio. Tengo cuatro meses. Explícamelo en español.
 
-La IA debería hacer pocas preguntas útiles y ayudarte a empezar. No necesitas un borrador completo ni un enlace universitario para iniciar. Sin navegación, las normas quedan sin verificar; sin creación de archivos, los métodos académicos se entregan como texto copiable. Las funciones y formatos admitidos varían; no hemos probado individualmente estas interfaces web.
+Deberías recibir dos o tres preguntas clave, una dirección provisional y un siguiente paso claro. No necesitas las normas de tu universidad para empezar. Lo desconocido se marca como *desconocido*.
 
-**[Abrir instrucciones](WEB-START.txt) · [Abrir texto sin formato para copiar](https://raw.githubusercontent.com/Zack0303/research-navigator/main/WEB-START.txt)**
+## Qué añade frente a preguntar a una IA sin más
 
-Si ya utilizas un agente que lee archivos locales, consulta la ruta de carpeta que sigue.
+Un chat normal ya detecta problemas evidentes. Research Navigator añade **seis comprobaciones** para problemas fáciles de pasar por alto, porque cada paso parece razonable por sí solo:
 
-## Otra opción: carpeta local en Codex y agentes similares
+| Comprobación | Qué pregunta |
+|---|---|
+| **C1 Ancla** | ¿Se ha desviado el proyecto de lo que tú y tu director necesitáis? |
+| **C2 Vecinos cercanos** | ¿Qué hacen ya los 3–5 trabajos más próximos y qué es realmente nuevo? |
+| **C3 Fuerza de las afirmaciones** | ¿Alguna afirmación es más fuerte que su evidencia? |
+| **C4 Criterio adecuado** | ¿Se juzga cada estudio por sus propios objetivos o con una escala única que no encaja? |
+| **C5 Viabilidad con piloto** | ¿La carga de trabajo se mide con un piloto pequeño o se adivina? |
+| **C6 Desconocido no es cero** | ¿Cada norma, cifra y estado tiene fuente? ¿Se separa “planificado” de “hecho”? |
 
-[Guía paso a paso en Codex](docs/start-in-codex.md)
-Necesitas un agente de IA que lea archivos locales. Verificar fuentes actuales requiere navegación web; generar archivos requiere permiso de escritura; el generador opcional sin conexión necesita Python (véase la guía avanzada). Este repositorio contiene instrucciones para el agente, no una aplicación de chat independiente. Tu proveedor puede cobrar su uso habitual.
+Estas comprobaciones salen de lecciones reales al escribir una revisión sistemática. Esa revisión se fue desviando de los objetivos del grupo, paso razonable a paso razonable. Usaba además una única escala de valor que juzgaba los estudios por metas que nunca tuvieron, y casi presentó como novedad una clasificación que otras revisiones ya usaban.
 
-1. Descarga y descomprime el repositorio, o usa la copia local.
-2. Abre la carpeta `research-navigator` en el espacio de trabajo del agente. Conserva SKILL.md y las carpetas de referencia juntas.
-3. Copia uno de estos mensajes. La lectura explícita evita depender de una instalación automática.
+Salidas breves y compartibles: **resumen de investigación de una página**, **informe de revisión**, **hoja de preparación de revisión de literatura** y **guion por párrafos** (afirmación, evidencia, lo que no se debe decir) antes de escribir.
 
-Si tu herramienta no puede abrir carpetas o leer archivos locales, esta ruta no funcionará. La instalación automática específica de cada plataforma aún no se ha validado aquí.
+## Qué no hará
 
-### Solo tengo una idea
-```text
-Lee SKILL.md en este espacio de trabajo y sigue Research Navigator.
-Estudio un máster en gestión de operaciones. Tengo ocho semanas y quiero investigar predicción de demanda con datos sintéticos. Explícame en español; entregaré en inglés. Aún no tengo normas del programa. Haz las primeras preguntas esenciales y ayúdame a delimitar un estudio provisional pequeño.
-```
+- Inventar artículos, citas, páginas, cifras o normas universitarias.
+- Llamar “verificada” a una fuente que no ha leído en este chat.
+- Redactar texto para entregar si la política de IA de tu institución es desconocida o lo prohíbe; en su lugar te dará estructura y comentarios.
+- Afirmar novedad sin una búsqueda.
 
-### Revisa un borrador
-```text
-Lee SKILL.md y sigue Research Navigator. Revisa este borrador sintético:
-“La IA reducirá los costes de inventario un 30%. Entrenaré y evaluaré con todos los datos. Nadie ha estudiado este problema”.
-Explica en español. No tengo requisitos oficiales. Separa recomendaciones de requisitos desconocidos y da tres acciones prioritarias. No inventes referencias.
-```
+Prueba primero con material público o ficticio. No pegues información confidencial de empresas. Consulta las normas de IA de tu institución antes de usarla en trabajos evaluados.
 
-### Crea un Skill basado en métodos académicos
-```text
-Lee SKILL.md y sigue Research Navigator. Ayúdame a crear un Skill reutilizable sobre métodos documentados de Yoshua Bengio, Université de Montréal, centrado en comparar métodos de aprendizaje automático. Usa fuentes académicas públicas, cita las observaciones y distingue interpretaciones. Confirma navegación y escritura antes de prometer archivos; si faltan, explica el siguiente paso. No suplantes al académico.
-```
+## Para usuarios de agentes (Codex, Claude Code y otros)
 
-La primera sesión debe ofrecer preguntas concretas, una dirección provisional, una tabla de requisitos conocidos/desconocidos y próximos pasos. Puedes empezar sin enlace universitario.
+Abre esta carpeta en tu agente y escribe: `Lee SKILL.md y sigue Research Navigator.` Ver [guía de Codex](docs/start-in-codex.md), [comprobaciones](references/checks.md), [plantillas](references/templates.md) y [guía de revisión de literatura](references/lit-review.md).
 
-Los idiomas de orientación y entrega son independientes. Se puede solicitar cualquier idioma; inglés, español y chino aún no tienen validación completa. Prueba con material público o sintético. No incluyas secretos de empleadores y respeta las normas institucionales de IA.
+## Estado
 
-[Revisión pública completa](examples/public-mres-case.md) · [Ejemplo de diagnóstico en chino](examples/oxford-review-case.md) · [Skill académico](examples/scholar-bengio-selected-methods/SKILL.md)
+Versión **v0.2.0-alpha**, experimental. Las pruebas con agentes están en [docs/v0.2-trial.md](docs/v0.2-trial.md). Muestran lo que las instrucciones hacen hacer a un modelo, no que sea útil para estudiantes reales. Aún no hay piloto con estudiantes. La calidad en español no ha sido revisada por una persona nativa. Licencia MIT.
 
-[Generador y pruebas](docs/development.md) · [PRD](docs/PRD-v0.1.md) · [Evaluación](docs/evaluation.md)
-
-Versión experimental v0.1.1-alpha. Los ejemplos indican sus límites históricos y documentales. No garantizan admisión ni cumplimiento. Las simulaciones no demuestran facilidad de uso humana, demanda ni ingresos. Licencia MIT.
+**Se agradecen comentarios** mediante un issue, usando solo datos ficticios.

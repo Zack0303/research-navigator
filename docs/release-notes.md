@@ -1,3 +1,18 @@
+# v0.2.0-alpha — Research checks
+
+Repositions Research Navigator as a research-supervisor prompt.
+
+- **Six checks** for easily missed mistakes: C1 Anchor (drift), C2 Nearest neighbours (novelty), C3 Claim strength, C4 Right yardstick (appraisal fit), C5 Feasibility from a pilot, C6 Unknown is not zero. Plus an "own words" rule for borrowed logic. See references/checks.md.
+- **Two new modes:** literature-review setup (references/lit-review.md) and section brief before writing.
+- **Templates T1–T5:** one-page research brief, review report, paragraph brief, literature-review setup sheet, where-we-are note.
+- **WEB-START.txt rewritten** (about 1,700 words, self-contained) with the checks, outputs and four entry choices.
+- **SKILL.md rewritten** with clear structure and reply style (conclusion first, at most five issues, one next action).
+- **READMEs (EN/ZH/ES) rewritten**: one-minute start, what is added beyond a plain chat, example prompts, limits.
+- **Tests:** six new structural tests (check consistency, self-contained web file, link resolution, templates); the three generator tests are unchanged.
+- **Agent trial** of the web edition against a no-prompt baseline on three check cases: docs/v0.2-trial.md.
+
+Limitations unchanged: no human student pilot, no native-speaker language review, web platforms not individually tested.
+
 # v0.1.1-alpha — Web chat access
 Adds WEB-START.txt, a single self-contained instruction file for pasting/uploading in ordinary web chats. EN/ES/ZH README pages now put this route first, with humanities examples and no coding prerequisite. Browsing and downloadable files are optional capabilities; supplied sources remain unverified without inspection. Exact Gemini/DeepSeek interfaces have not been tested. The automated generator is unchanged. See web-chat-trial.md for agent-only checks.
 

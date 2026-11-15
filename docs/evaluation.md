@@ -17,3 +17,6 @@ Recruit 3–5 consenting adult students across master's/PhD and the three target
 Session: 5-minute intake, 15-minute plan/review task, 5-minute explain-back of rules and next steps, short interview. Measure task completion, time, corrections needed, ability to distinguish verified rules from advice, usefulness 1–5, confusing language and preferred next action. Ask whether they would use it again; do not interpret stated willingness as purchase demand.
 
 Later human-validation milestone (not a claim or gate completed by the experimental release): each language reviewed for semantic accuracy; all evidence violations corrected; at least 3 of 5 students independently identify next steps and verified versus provisional rules. A smaller pilot is exploratory and cannot meet that target. Summarize anonymized findings, limitations and next iteration before publication approval. No income or market-size conclusions.
+
+## v0.2 check cases
+Use the check cases in examples/prompts.md (C1–C6, own words, section brief) in the paired baseline above. Score each case on whether the expected behaviour appears (0 = absent, 1 = partial, 2 = clear and actionable) and record any invented source or rule separately. The first agent-only run is in docs/v0.2-trial.md; it is a single unblinded run, not a quality claim.

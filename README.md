@@ -1,61 +1,73 @@
 # Research Navigator
-Turn a broad research idea into a manageable master's or PhD proposal, or review a draft against evidence-backed programme requirements.
+
+**A research-supervisor prompt for master's and PhD students.** Paste it into any AI chat. It helps you plan a project, review a draft, set up a literature review or plan a section, and it checks for the mistakes that usually cost students months.
 
 [中文](README.zh-CN.md) · [Español](README.es.md)
 
+## Start in one minute (no coding)
 
-## 🌐 Start with a web AI chat — recommended for first-time users
-**No coding background needed. No Codex installation required.**
+1. Open **[WEB-START.txt](WEB-START.txt)** ([plain text for copying](https://raw.githubusercontent.com/Zack0303/research-navigator/main/WEB-START.txt)).
+2. Copy all of it into a new chat in ChatGPT, Claude, Gemini, DeepSeek or similar. Upload it instead if your chat accepts files. A link alone is not enough.
+3. Say what you need, in any language. For example:
 
-1. Open **[the all-in-one web chat instructions](WEB-START.txt)**. Copy the whole text into a new Gemini, DeepSeek or other AI chat. If your chat supports text attachments, you can upload the file instead. Do not send only its link.
-2. Tell it what you need. For example: **“I am a history master's student with a broad idea about local newspapers. Help me find a manageable research question. Explain in English.”**
+> I'm an MSc student in education. I want to study how teachers use AI feedback tools, but the topic is too broad. I have four months. Explain in English.
 
-The AI should ask a few useful questions and help you start. No school link or completed draft is needed to begin. If it cannot browse, school requirements stay unverified. If it cannot create files, scholar guidance is delivered as copyable text. Upload formats and capabilities vary by platform; these web interfaces have not been individually tested here.
+You should get two or three focused questions, a provisional direction and one clear next step. You do not need your university's rules to start. Unknown rules stay marked as *unknown*.
 
-**[Open the instructions](WEB-START.txt) · [Open plain text to copy](https://raw.githubusercontent.com/Zack0303/research-navigator/main/WEB-START.txt)**
+## What makes it different from just asking an AI
 
-Already using a file-capable agent? Continue with the local-folder route below.
+A plain chat already spots obvious problems, such as a missing method or train/test leakage. Research Navigator adds **six checks** for problems that are easy to miss, because each step looks reasonable on its own:
 
-## Local-folder option — Codex and similar agents
+| Check | The question it asks |
+|---|---|
+| **C1 Anchor** | Has the project drifted from what you and your supervisor actually need? |
+| **C2 Nearest neighbours** | What do the 3–5 closest works already do, and what is really new? |
+| **C3 Claim strength** | Is any claim stronger than its evidence? |
+| **C4 Right yardstick** | Are studies judged against their own aims, or against one ladder that does not fit? |
+| **C5 Feasibility from a pilot** | Is your workload measured from a small pilot, or guessed? |
+| **C6 Unknown is not zero** | Does every rule, number and status have a source? Is "planned" kept apart from "done"? |
 
-[Step-by-step Codex start](docs/start-in-codex.md)
-You need an AI agent that can read local Markdown files. Live university and scholar checks also need web browsing. File generation needs an agent that can write files; the optional helper needs Python. This repository is a set of agent instructions, not a standalone chat app. Your agent provider's usual usage charges may apply.
+These checks come from real lessons in writing a systematic literature review. That review drifted away from the research group's aims one reasonable step at a time. It had used one value ladder that judged studies against goals they never had, and it nearly claimed novelty for a grouping that other reviews already used.
 
-1. Download and unzip this repository, or use your local copy.
-2. Open the extracted `research-navigator` folder in your agent's workspace. Keep its reference folders alongside SKILL.md.
-3. Paste one of the prompts below. This explicitly asks the agent to read the instructions; it does not depend on automatic Skill installation.
+It also gives you short, standard outputs you can share:
+- a **one-page research brief** to show your supervisor early;
+- a **review report**: one-sentence verdict, at most five priority issues, a claim-strength table and next actions;
+- a **literature-review setup sheet** with a pilot-based workload estimate;
+- a **paragraph brief** (claim, evidence, what must not be said) *before* you write, so the logic is yours.
 
-If your agent cannot open a folder or read these files, this quick start will not work. Use a file-capable agent; host-specific automatic installation is an advanced option and has not yet been validated here.
+## Try these
 
-### I only have an idea
-```text
-Read SKILL.md in this workspace and follow Research Navigator.
-I am an MSc student in operations management. I have eight weeks and want to explore demand forecasting using synthetic data. Explain in English; my submission language is English. I have no programme rules yet. Ask only the most useful first questions and help me choose a small provisional study.
-```
+**Idea → plan**
+> I'm a PhD student in operations management. I'm interested in using large language models for production scheduling. Help me find a manageable first study. Explain in Chinese; I submit in English.
 
-### Review a draft
-```text
-Read SKILL.md in this workspace and follow Research Navigator.
-Review this synthetic draft: “I will prove AI cuts inventory costs by 30%. I will train and test on all data. No one has studied this.” Explain in English. I have no official programme rules. Separate academic advice from unknown requirements, and give three priority actions. Do not invent references.
-```
+**Review a draft**
+> Review this paragraph from my proposal: "This study will prove that AI reduces inventory costs by 30%. I will train and test the model on all available data. No one has studied this before." I have no programme rules yet.
 
-### Explore a scholar's methods
-```text
-Read SKILL.md in this workspace and follow Research Navigator.
-Help me create a reusable scholar-informed Skill for Yoshua Bengio, Université de Montréal, focused on comparing machine-learning methods. Use public academic evidence, cite each observation and label interpretations. Confirm browsing and file-writing capabilities before promising a generated bundle; if unavailable, explain the next step. Do not impersonate the scholar.
-```
+**Literature review**
+> I need to do a systematic literature review on digital twins in hospitals for my master's thesis. I have ten weeks. Where do I start?
 
-## What you should receive
-For a first planning session: a few focused questions, a provisional research direction, a short table of known/unknown requirements and concrete next actions. For review: draft-specific issues, evidence status and prioritized revisions. Missing university details should not prevent provisional planning.
+**Plan a section**
+> Help me plan the Discussion section of my paper before I write it. My main finding is that the new method was faster but not more accurate.
 
-You can request any guidance language independently of submission language. English, Spanish and Chinese documentation is available; language quality is still experimental. Use public or synthetic material to try the tool. Do not include confidential employer data. Check your institution's AI-use rules before using assistance for a submission.
+## What it will not do
 
-## See a complete example first
-[Public MRes review](examples/public-mres-case.md) · [Chinese diagnostic review](examples/oxford-review-case.md) · [Reusable scholar bundle](examples/scholar-bengio-selected-methods/SKILL.md)
+- Invent papers, citations, page numbers, counts or university rules.
+- Call a source "verified" unless it actually read it in this chat.
+- Write text for you to submit when your institution's AI policy is unknown or forbids it. It gives structure and feedback instead.
+- Claim novelty without a search.
 
-Examples disclose historical/limited evidence. They are not guarantees of admission, compliance or current university rules.
+Use public or made-up material when you try it. Do not paste confidential employer data. Check your institution's AI-use rules before using any AI help for assessed work.
 
-## For contributors and advanced users
-[Offline generator and tests](docs/development.md) · [PRD](docs/PRD-v0.1.md) · [Evidence rules](references/source-verification.md) · [Evaluation plan](docs/evaluation.md) · [Decisions](docs/decisions.md) · [Release readiness](docs/release-readiness.md)
+## For agent users (Codex, Claude Code and others)
 
-Experimental v0.1.1-alpha. No proven user demand or income. MIT licensed. Agent walkthroughs do not establish human usability or superiority to generic AI.
+Open this folder in your agent and say: `Read SKILL.md and follow Research Navigator.` Then describe your task. See [step-by-step Codex start](docs/start-in-codex.md). The agent version reads the detailed [checks](references/checks.md), [templates](references/templates.md) and [literature-review guide](references/lit-review.md).
+
+An advanced option builds evidence-linked notes on a scholar's documented methods: [scholar guide](references/scholar-generator.md) · [example](examples/scholar-bengio-selected-methods/SKILL.md).
+
+## Status and honesty
+
+Version **v0.2.0-alpha**, experimental. Agent-only trials are recorded in [docs/v0.2-trial.md](docs/v0.2-trial.md). They show what the instructions make a model do. They do not show that real students find it useful. No human student pilot has been run yet. Web interfaces have not each been tested. MIT licence.
+
+[Evaluation plan](docs/evaluation.md) · [Decisions](docs/decisions.md) · [Release notes](docs/release-notes.md) · [Development and tests](docs/development.md) · [Public review example](examples/public-mres-case.md)
+
+**Feedback wanted.** If you try it, please open an issue: what you asked, what helped, what confused you. Use made-up details only.

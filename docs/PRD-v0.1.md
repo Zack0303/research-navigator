@@ -1,4 +1,6 @@
 # Research Navigator — PRD v0.1
+
+> **v0.2 update (2026-11-15):** product outcome extended with six research checks, literature-review setup and section-brief modes, and templates T1–T5 (see docs/decisions.md D014–D017). Scope, non-goals and acceptance gates below still apply.
 Date: 2026-10-16. Status: experimental v0.1.0-alpha candidate; owner approved public MIT publication on 2026-10-16.
 
 ## Problem and audience
