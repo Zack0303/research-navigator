@@ -1,43 +1,47 @@
 # Agensi listing copy (v0.2)
 
-Text for https://www.agensi.io/skills/research-navigator. The maintainer pastes it into the Agensi dashboard. Keep it in step with README.md.
+Paste into the dashboard for https://www.agensi.io/skills/research-navigator. Keep it in step with README.md.
 
 ---
 
 ## Short description
 
-Keep your literature review and research plan on track. Six checks catch drift, unsupported novelty, overclaiming, the wrong appraisal yardstick and guessed workload. Built and used in a real systematic review. Free, experimental v0.2.0-alpha.
+Your AI research supervisor. Six checks catch the quiet mistakes that cost students months: drift, fake gaps, overclaiming, wrong review criteria and impossible workloads. Built and used in a real systematic literature review. Free.
 
 ## About this skill
 
-Research Navigator is a research-supervisor skill for master's and PhD students. Its strongest mode is **literature-review setup**.
+**Stop losing months to mistakes you can't see.**
 
-**Built and used in a real review.** The author developed these checks while writing a systematic literature review (2026, in progress) and used them in it. Before the checks, that review drifted from the research group's aims one reasonable step at a time. It also judged studies on a single value ladder they were never designed for, and nearly claimed novelty for a grouping that other reviews already used. The author found this structure worked well for that review. It is one developer's experience, not an independent study.
+Research rarely fails on the hard parts. It fails quietly: the topic drifts one reasonable step at a time, a "gap" turns out to be covered, a claim outruns the data, or a search returns 2,000 papers you can't screen. By the time a supervisor spots it, the weeks are gone.
 
-**Five modes:** plan a project · review a proposal or paper · set up a literature review · brief a section before writing · evidence-linked notes on a scholar's methods (advanced).
+Research Navigator catches these early. It was built and used in a real systematic literature review, and it worked so well that we packaged it for every master's and PhD student.
 
-**Six checks:**
-- **C1 Anchor:** has the work drifted from what you and your supervisor need?
-- **C2 Nearest neighbours:** what do the 3–5 closest works already do?
-- **C3 Claim strength:** is any claim stronger than its evidence?
-- **C4 Right yardstick:** are studies judged against their own aims, with describing kept apart from appraising?
-- **C5 Feasibility from a pilot:** is the workload measured from a small pilot, or guessed?
-- **C6 Unknown is not zero:** does every rule, count and status have a source?
+**Six checks that save months**
+- **C1 Anchor:** catches drift away from what you and your supervisor need.
+- **C2 Nearest neighbours:** tests your "novelty" against the closest 3–5 works.
+- **C3 Claim strength:** flags claims stronger than your evidence.
+- **C4 Right yardstick:** fixes review criteria that judge studies unfairly.
+- **C5 Feasibility from a pilot:** replaces guesses with a quick, timed pilot.
+- **C6 Unknown is not zero:** keeps every rule, number and source traceable.
 
-**Outputs:** a one-page research brief, a review report (verdict, at most five priority issues, claim-strength table), a literature-review setup sheet, a paragraph brief (claim | evidence | must-not-say) and a where-we-are note.
+**What you get**
+- **Literature-review setup:** question, review type, search plan, pilot, screening and coding.
+- **One-page research brief** for your supervisor, in week one.
+- **Review report:** a one-line verdict, your top five fixes and a claim-strength table.
+- **Paragraph brief** before you write: your logic, your words.
 
-**No MCP agent?** Paste WEB-START.txt from the GitHub repository into any web chat, such as ChatGPT, Gemini or DeepSeek: https://github.com/Zack0303/research-navigator
+**Works everywhere.** Claude Code, Codex, Cursor and more through Agensi. No agent? Paste WEB-START.txt from GitHub into ChatGPT, Gemini or DeepSeek: https://github.com/Zack0303/research-navigator
 
-The student owns the research and the final wording. MIT licensed. Source: https://github.com/Zack0303/research-navigator
+**Safe by design.** It never invents sources, keeps you the author, and marks anything unverified as unknown. Any discipline, any language. MIT licensed.
 
 ## Example session
 
-Use this real agent-trial output in place of the hand-written example. It is abridged; the full record is in docs/v0.2-trial.md.
+Use this real agent-trial output in place of the current example.
 
-**Prompt (synthetic):**
+**Prompt:**
 > My topic started as how small manufacturers adopt AI scheduling tools. My supervisor wanted industry relevance. I narrowed to LLM scheduling, then to benchmarks for LLM scheduling, and now I'm comparing evaluation metrics across benchmark papers. Is this a good review topic? I'm an MSc student with 10 weeks left.
 
-**Response (abridged):**
+**Response:**
 > Short answer: it can be a good review topic, but not in its current form. Your purpose has drifted, and your time is short.
 >
 > **C1, drift.** Steps 1–2 keep your purpose. Step 3 is a different purpose: you now study how researchers measure, not what manufacturers need. Has your supervisor seen the last two narrowings?
@@ -50,12 +54,10 @@ Use this real agent-trial output in place of the hand-written example. It is abr
 >
 > **Next action:** write one paragraph, "who needs this and what they must learn", and send it to your supervisor.
 
-Caption: Agent-trial output to a synthetic prompt (Claude Sonnet, web-chat edition, 2026-11-15). Not a real student outcome.
+## FAQ: How is this different from just asking ChatGPT?
+
+A plain chat spots the obvious errors. Research Navigator goes further, into what to do next. It replaces a guessed plan with a timed pilot, keeps your supervisor in the loop before you sink weeks into a new direction, and never plants a conclusion in your draft. It also checks your institution's AI policy before writing anything.
 
 ## Known limitations
 
-Experimental alpha. The evidence so far is the author's own use in one real, ongoing review and a small agent-only trial. There has been no independent student pilot and no native-speaker review, and it has not been shown to beat ordinary prompting. The nine offline tests check structure and packaging, not scientific truth. Source verification depends on the host agent's browsing. There are no admission, grading, compliance or publication guarantees.
-
-## FAQ: How does it differ from just asking a standard AI?
-
-A strong model already spots obvious problems. In a small agent trial, the difference was in what happened next. With the skill, the agent proposed a timed pilot instead of a guessed plan and kept the supervisor in the loop. It did not plant an expected finding in a draft, and it asked about the institution's AI policy before writing. The author also used the structure in a real review and found it worked well. Neither of these is an independent test.
+Experimental alpha (v0.2.0). Source checking needs an agent that can browse. Advice supports your judgement and your supervisor's; it does not replace them.

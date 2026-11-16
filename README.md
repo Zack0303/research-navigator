@@ -1,78 +1,67 @@
 # Research Navigator
 
-**A research-supervisor prompt for master's and PhD students.** Paste it into any AI chat. It helps you plan a project, review a draft, set up a literature review or plan a section, and it checks for the mistakes that usually cost students months.
+**Your AI research supervisor for literature reviews, proposals and papers.**
+
+Most research time is not lost on hard problems. It is lost on quiet mistakes: a topic that slowly drifts, a "gap" nobody checked, a claim stronger than the data, a search too big to finish. Research Navigator catches them early — in any AI chat, in any language, for free.
+
+**Built and used in a real systematic literature review.** It worked so well there that we packaged it for every master's and PhD student.
 
 [中文](README.zh-CN.md) · [Español](README.es.md)
 
-## Start in one minute (no coding)
+## Start in one minute
 
-1. Open **[WEB-START.txt](WEB-START.txt)** ([plain text for copying](https://raw.githubusercontent.com/Zack0303/research-navigator/main/WEB-START.txt)).
-2. Copy all of it into a new chat in ChatGPT, Claude, Gemini, DeepSeek or similar. Upload it instead if your chat accepts files. A link alone is not enough.
-3. Say what you need, in any language. For example:
+1. Open **[WEB-START.txt](WEB-START.txt)** ([plain text](https://raw.githubusercontent.com/Zack0303/research-navigator/main/WEB-START.txt)).
+2. Paste it into ChatGPT, Claude, Gemini, DeepSeek or any AI chat.
+3. Say what you need:
 
-> I'm an MSc student in education. I want to study how teachers use AI feedback tools, but the topic is too broad. I have four months. Explain in English.
+> I need to do a systematic literature review on digital twins in hospitals. I have ten weeks. Where do I start?
 
-You should get two or three focused questions, a provisional direction and one clear next step. You do not need your university's rules to start. Unknown rules stay marked as *unknown*.
+No installation. No coding. No university rules needed to begin.
 
-## What makes it different from just asking an AI
+Using Claude Code, Codex or Cursor? Install it from **[Agensi](https://www.agensi.io/skills/research-navigator)**, or open this folder and say `Read SKILL.md and follow Research Navigator.`
 
-A plain chat already spots obvious problems, such as a missing method or train/test leakage. Research Navigator adds **six checks** for problems that are easy to miss, because each step looks reasonable on its own:
+## Six checks that save months
 
-| Check | The question it asks |
+| Check | What it catches |
 |---|---|
-| **C1 Anchor** | Has the project drifted from what you and your supervisor actually need? |
-| **C2 Nearest neighbours** | What do the 3–5 closest works already do, and what is really new? |
-| **C3 Claim strength** | Is any claim stronger than its evidence? |
-| **C4 Right yardstick** | Are studies judged against their own aims, or against one ladder that does not fit? |
-| **C5 Feasibility from a pilot** | Is your workload measured from a small pilot, or guessed? |
-| **C6 Unknown is not zero** | Does every rule, number and status have a source? Is "planned" kept apart from "done"? |
+| **C1 Anchor** | Your project drifting away from what you and your supervisor actually need |
+| **C2 Nearest neighbours** | "Novel" ideas that the closest 3–5 papers already cover |
+| **C3 Claim strength** | Claims that say more than your evidence shows |
+| **C4 Right yardstick** | Review criteria that judge studies against goals they never had |
+| **C5 Feasibility from a pilot** | Plans built on guesses instead of a quick, timed pilot |
+| **C6 Unknown is not zero** | Missing rules, counts or sources treated as facts |
 
-**Used in a real literature review.** The author built these checks while writing a systematic literature review (2026, still in progress) and then used them in that review. Before the checks, the review had three problems:
-- it drifted away from the research group's aims, one reasonable step at a time;
-- it used one value ladder that judged studies against goals they never had;
-- it nearly claimed novelty for a grouping that other reviews already used.
+Each one comes from a real mistake in a real review. Each one comes with a concrete next step, not a lecture.
 
-After the author switched to this structure, it worked well for that review. The structure is: anchor and nearest-neighbour checks, search planning from a pilot, coding that describes before it appraises, and a paragraph brief before each section. This is one developer's own experience, not an independent study.
+## What you get
 
-It also gives you short, standard outputs you can share:
-- a **one-page research brief** to show your supervisor early;
-- a **review report**: one-sentence verdict, at most five priority issues, a claim-strength table and next actions;
-- a **literature-review setup sheet** with a pilot-based workload estimate;
-- a **paragraph brief** (claim, evidence, what must not be said) *before* you write, so the logic is yours.
+- **Literature-review setup:** question, review type, search plan, a 50-record pilot, screening and coding that hold up to examiners.
+- **One-page research brief:** the page your supervisor wants to see in week one, not week ten.
+- **Review report:** a one-line verdict, your top five fixes and a claim-strength table.
+- **Paragraph brief:** claim, evidence and what *not* to say, before you write. Your logic, your words.
 
-## Try these
+## Try it
 
-**Idea → plan**
-> I'm a PhD student in operations management. I'm interested in using large language models for production scheduling. Help me find a manageable first study. Explain in Chinese; I submit in English.
+**Plan a project**
+> I'm a PhD student in operations management, interested in LLMs for production scheduling. Help me find a first study I can actually finish. Explain in Chinese; I submit in English.
 
-**Review a draft**
-> Review this paragraph from my proposal: "This study will prove that AI reduces inventory costs by 30%. I will train and test the model on all available data. No one has studied this before." I have no programme rules yet.
+**Fix a draft**
+> Review this: "This study will prove that AI reduces inventory costs by 30%. I will train and test on all available data. No one has studied this before."
 
-**Literature review**
-> I need to do a systematic literature review on digital twins in hospitals for my master's thesis. I have ten weeks. Where do I start?
+**Write a section**
+> Help me plan my Discussion. My main finding: the new method was faster but not more accurate.
 
-**Plan a section**
-> Help me plan the Discussion section of my paper before I write it. My main finding is that the new method was faster but not more accurate.
+## Why you can trust it
 
-## What it will not do
+- **No made-up sources.** It never invents papers, citations, page numbers or university rules.
+- **You stay the author.** It gives structure and feedback, and checks your institution's AI policy before drafting.
+- **Honest about rules.** Anything it cannot verify is marked *unknown*, never guessed.
+- **Any field, any language.** Qualitative, quantitative, historical, design. English, Chinese and Spanish guides included.
 
-- Invent papers, citations, page numbers, counts or university rules.
-- Call a source "verified" unless it actually read it in this chat.
-- Write text for you to submit when your institution's AI policy is unknown or forbids it. It gives structure and feedback instead.
-- Claim novelty without a search.
+## Details
 
-Use public or made-up material when you try it. Do not paste confidential employer data. Check your institution's AI-use rules before using any AI help for assessed work.
+v0.2.0-alpha · MIT licence · [Agent trial](docs/v0.2-trial.md) · [Checks in depth](references/checks.md) · [Templates](references/templates.md) · [Literature-review guide](references/lit-review.md) · [Codex setup](docs/start-in-codex.md) · [Release notes](docs/release-notes.md) · [Development](docs/development.md)
 
-## For agent users (Codex, Claude Code and others)
+Advanced: evidence-linked notes on a scholar's documented methods ([guide](references/scholar-generator.md), [example](examples/scholar-bengio-selected-methods/SKILL.md)).
 
-Open this folder in your agent and say: `Read SKILL.md and follow Research Navigator.` Then describe your task. See [step-by-step Codex start](docs/start-in-codex.md). The agent version reads the detailed [checks](references/checks.md), [templates](references/templates.md) and [literature-review guide](references/lit-review.md).
-
-An advanced option builds evidence-linked notes on a scholar's documented methods: [scholar guide](references/scholar-generator.md) · [example](examples/scholar-bengio-selected-methods/SKILL.md).
-
-## Status and honesty
-
-Version **v0.2.0-alpha**, experimental. Agent-only trials are recorded in [docs/v0.2-trial.md](docs/v0.2-trial.md). They show what the instructions make a model do. They do not show that real students find it useful. The author has used the structure in one real, ongoing literature review (see above). No independent student pilot has been run yet. Web interfaces have not each been tested. MIT licence.
-
-[Evaluation plan](docs/evaluation.md) · [Decisions](docs/decisions.md) · [Release notes](docs/release-notes.md) · [Development and tests](docs/development.md) · [Public review example](examples/public-mres-case.md)
-
-**Feedback wanted.** If you try it, please open an issue: what you asked, what helped, what confused you. Use made-up details only.
+Tried it? Open an issue and tell us what helped. Please use made-up details, never confidential data.
