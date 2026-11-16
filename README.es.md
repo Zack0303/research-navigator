@@ -27,7 +27,7 @@ Un chat normal ya detecta problemas evidentes. Research Navigator añade **seis 
 | **C5 Viabilidad con piloto** | ¿La carga de trabajo se mide con un piloto pequeño o se adivina? |
 | **C6 Desconocido no es cero** | ¿Cada norma, cifra y estado tiene fuente? ¿Se separa “planificado” de “hecho”? |
 
-Estas comprobaciones salen de lecciones reales al escribir una revisión sistemática. Esa revisión se fue desviando de los objetivos del grupo, paso razonable a paso razonable. Usaba además una única escala de valor que juzgaba los estudios por metas que nunca tuvieron, y casi presentó como novedad una clasificación que otras revisiones ya usaban.
+**Usado en una revisión de literatura real.** El autor creó estas comprobaciones mientras escribía una revisión sistemática (2026, aún en curso) y las usó en ella. Antes, esa revisión se había ido desviando de los objetivos del grupo paso a paso, usaba una única escala de valor que juzgaba los estudios por metas que nunca tuvieron y casi presentó como novedad una clasificación ya usada. Con esta estructura le funcionó bien. La estructura incluye comprobaciones de ancla y de vecinos cercanos, búsqueda planificada con un piloto, codificación que describe antes de valorar y un guion por párrafos antes de escribir. Es la experiencia de un solo desarrollador, no un estudio independiente.
 
 Salidas breves y compartibles: **resumen de investigación de una página**, **informe de revisión**, **hoja de preparación de revisión de literatura** y **guion por párrafos** (afirmación, evidencia, lo que no se debe decir) antes de escribir.
 
@@ -46,6 +46,6 @@ Abre esta carpeta en tu agente y escribe: `Lee SKILL.md y sigue Research Navigat
 
 ## Estado
 
-Versión **v0.2.0-alpha**, experimental. Las pruebas con agentes están en [docs/v0.2-trial.md](docs/v0.2-trial.md). Muestran lo que las instrucciones hacen hacer a un modelo, no que sea útil para estudiantes reales. Aún no hay piloto con estudiantes. La calidad en español no ha sido revisada por una persona nativa. Licencia MIT.
+Versión **v0.2.0-alpha**, experimental. Las pruebas con agentes están en [docs/v0.2-trial.md](docs/v0.2-trial.md). Muestran lo que las instrucciones hacen hacer a un modelo, no que sea útil para estudiantes reales. Aparte del uso del autor en una revisión real en curso, aún no hay piloto independiente con estudiantes. La calidad en español no ha sido revisada por una persona nativa. Licencia MIT.
 
 **Se agradecen comentarios** mediante un issue, usando solo datos ficticios.

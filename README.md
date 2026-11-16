@@ -27,7 +27,12 @@ A plain chat already spots obvious problems, such as a missing method or train/t
 | **C5 Feasibility from a pilot** | Is your workload measured from a small pilot, or guessed? |
 | **C6 Unknown is not zero** | Does every rule, number and status have a source? Is "planned" kept apart from "done"? |
 
-These checks come from real lessons in writing a systematic literature review. That review drifted away from the research group's aims one reasonable step at a time. It had used one value ladder that judged studies against goals they never had, and it nearly claimed novelty for a grouping that other reviews already used.
+**Used in a real literature review.** The author built these checks while writing a systematic literature review (2026, still in progress) and then used them in that review. Before the checks, the review had three problems:
+- it drifted away from the research group's aims, one reasonable step at a time;
+- it used one value ladder that judged studies against goals they never had;
+- it nearly claimed novelty for a grouping that other reviews already used.
+
+After the author switched to this structure, it worked well for that review. The structure is: anchor and nearest-neighbour checks, search planning from a pilot, coding that describes before it appraises, and a paragraph brief before each section. This is one developer's own experience, not an independent study.
 
 It also gives you short, standard outputs you can share:
 - a **one-page research brief** to show your supervisor early;
@@ -66,7 +71,7 @@ An advanced option builds evidence-linked notes on a scholar's documented method
 
 ## Status and honesty
 
-Version **v0.2.0-alpha**, experimental. Agent-only trials are recorded in [docs/v0.2-trial.md](docs/v0.2-trial.md). They show what the instructions make a model do. They do not show that real students find it useful. No human student pilot has been run yet. Web interfaces have not each been tested. MIT licence.
+Version **v0.2.0-alpha**, experimental. Agent-only trials are recorded in [docs/v0.2-trial.md](docs/v0.2-trial.md). They show what the instructions make a model do. They do not show that real students find it useful. The author has used the structure in one real, ongoing literature review (see above). No independent student pilot has been run yet. Web interfaces have not each been tested. MIT licence.
 
 [Evaluation plan](docs/evaluation.md) · [Decisions](docs/decisions.md) · [Release notes](docs/release-notes.md) · [Development and tests](docs/development.md) · [Public review example](examples/public-mres-case.md)
 

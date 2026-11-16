@@ -45,3 +45,5 @@ Web-chat checkpoint: independent agent used WEB-START.txt alone for two Chinese 
 D015: add two modes, literature-review setup and section brief (claim | evidence | must-not-say before writing), and standard templates T1–T5. Scholar generator kept as an advanced option, unchanged.
 D016: WEB-START.txt stays self-contained and under 2,400 words; tests/test_instructions.py checks that the six checks appear in SKILL, web edition, references and all READMEs, and that relative links resolve. Structural tests do not establish research accuracy.
 D017: README leads with a one-minute web start, then states honestly what is added beyond a plain chat. Agent trials remain model behaviour, not human evidence; human pilot still deferred.
+
+2026-11-16 — D018: README (EN/ZH/ES), docs/v0.2-trial.md and the Agensi listing state that the author built and used this structure in one real, ongoing systematic review and found it worked well. Worded as a single developer self-report, separate from agent trials; not independent or student evidence. No project details published. Agensi listing copy kept in docs/agensi-listing.md.
